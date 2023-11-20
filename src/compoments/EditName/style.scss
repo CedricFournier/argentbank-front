@@ -1,0 +1,32 @@
+.diveditname {
+    width: 330px;
+    margin: 0 auto;
+    transition: height ease 500ms;
+  }
+
+.h2editname {
+    color: $white;
+}
+
+.labeleditname {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    color: $white;
+    @include mobile {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+}
+
+.btnedit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include mobile {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
