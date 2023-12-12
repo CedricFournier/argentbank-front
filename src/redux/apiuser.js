@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const userLog = createAsyncThunk(
     "user/userLog",
     async ({ email, password, checked}) => {
-      const rlogin = await fetch("http://localhost:3001/api/v1/user/login", {
+      const rlogin = await fetch("https://argentbank-back.onrender.com/api/v1/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -30,7 +30,7 @@ export const userLog = createAsyncThunk(
   );
   
   async function userProfil(token) {
-    const ruser = await fetch("http://localhost:3001/api/v1/user/profile", {
+    const ruser = await fetch("https://argentbank-back.onrender.com/api/v1/user/profile", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ export const userLog = createAsyncThunk(
   export const userEdit = createAsyncThunk(
     "user/userEdit",
     async ({ userName, token}) => {
-      const redit = await fetch("http://localhost:3001/api/v1/user/profile", {
+      const redit = await fetch("https://argentbank-back.onrender.com/api/v1/user/profile", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
