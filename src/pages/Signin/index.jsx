@@ -50,6 +50,8 @@ function Signin() {
                     }
                     <Button type={BUTTON_TYPES.SUBMIT} class="button sign-in-button" content="Sign in"/>
                 </form>
+                <p>Username : tony@stark.com</p>
+                <p>Password : password123</p>
             </section>
         </main>
     )
